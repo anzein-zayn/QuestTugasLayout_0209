@@ -17,5 +17,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             Praktikum4Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    TugasPraktikum4(modifier = Modifier.padding(innerPadding))
+                }
+            }
+        }
     }
 }
