@@ -133,3 +133,49 @@ fun TugasPraktikum4(modifier: Modifier) {
                 )
             }
         }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .align(Alignment.CenterHorizontally)
+                .padding(all = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = colorResource(R.color.kartu_biru)
+            )
+        ) {
+            Row() {
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(all = 1.dp)
+                )
+                Spacer(modifier = Modifier.width(15.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.name2),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Default,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 5.dp, end = 35.dp)
+                    )
+                    Text(
+                        stringResource(R.string.noTelp1),
+                        fontSize = 18.sp,
+                        fontFamily = FontFamily.Default,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 2.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat1),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 1.dp).padding(bottom = 5.dp)
+                    )
+                }
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(all = 1.dp)
+                )
+            }
+        }
