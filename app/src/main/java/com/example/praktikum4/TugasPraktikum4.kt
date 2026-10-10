@@ -41,3 +41,9 @@ fun TugasPraktikum4(modifier: Modifier) {
             color = Color.Black,
             fontWeight = FontWeight.Bold
         )
+        Text(
+            stringResource(R.string.universitas),
+            color = Color.Black,
+            fontSize = 22.sp
+        )
+        Spacer(modifier = Modifier.height(20.dp))
