@@ -55,3 +55,35 @@ fun TugasPraktikum4(modifier: Modifier) {
             colors = CardDefaults.cardColors(
                 containerColor = colorResource(R.color.kartu_abu)
             )
+        ) {
+            Row() {
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(all = 5.dp)
+                )
+                Spacer(modifier = Modifier.width(15.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.name),
+                        fontSize = 23.sp,
+                        fontStyle = FontStyle.Italic,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 20.dp, end = 2.dp)
+
+                    )
+                    Text(
+                        stringResource(R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 1.dp).padding(bottom = 1.dp)
+                    )
+                }
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(all = 0.dp).align(Alignment.CenterVertically),
+                )
+            }
+        }
