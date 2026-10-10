@@ -179,3 +179,63 @@ fun TugasPraktikum4(modifier: Modifier) {
                 )
             }
         }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .align(Alignment.CenterHorizontally)
+                .padding(all = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = colorResource(R.color.kartu_hijau)
+            )
+        ) {
+            Row() {
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(all = 1.dp)
+                )
+                Spacer(modifier = Modifier.width(15.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.name3),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Default,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 2.dp, end = 40.dp)
+                    )
+                    Text(
+                        stringResource(R.string.noTelp2),
+                        fontSize = 18.sp,
+                        fontFamily = FontFamily.Default,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 1.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat3),
+                        fontSize = 18.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 1.dp).padding(bottom = 1.dp)
+                    )
+                }
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(start = 1.dp)
+                )
+            }
+        }
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+        ) {
+            Text(
+                stringResource(R.string.footer_copyright),
+                color = Color.Black,
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+        }
+    }
+}
