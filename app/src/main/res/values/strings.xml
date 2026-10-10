@@ -9,4 +9,8 @@
 
     <string name="name">Bambang Sumantri</string>
     <string name="alamat">Turi, Sleman</string>
+
+    <string name="name1">Gibran Fathoni</string>
+    <string name="noTelp">085436874190</string>
+    <string name="alamat1">Kasihan, Bantul</string>
 </resources>
