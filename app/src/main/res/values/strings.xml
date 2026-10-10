@@ -13,4 +13,9 @@
     <string name="name1">Gibran Fathoni</string>
     <string name="noTelp">085436874190</string>
     <string name="alamat1">Kasihan, Bantul</string>
+
+    <string name="name2">Zhilal Fadhilah</string>
+    <string name="noTelp1">085436874190</string>
+    <string name="alamat2">Depok, Sleman</string>
+
 </resources>
