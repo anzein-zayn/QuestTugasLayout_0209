@@ -47,3 +47,11 @@ fun TugasPraktikum4(modifier: Modifier) {
             fontSize = 22.sp
         )
         Spacer(modifier = Modifier.height(20.dp))
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .align(Alignment.CenterHorizontally)
+                .padding(all = 15.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = colorResource(R.color.kartu_abu)
+            )
