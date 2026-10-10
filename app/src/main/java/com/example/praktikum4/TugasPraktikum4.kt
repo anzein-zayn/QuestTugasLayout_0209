@@ -27,9 +27,17 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+
 @Composable
 fun TugasPraktikum4(modifier: Modifier) {
     Column(
         modifier = Modifier.padding(top = 10.dp)
             .fillMaxSize().background(Color.White),
         horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            stringResource(R.string.prodi),
+            fontSize = 35.sp,
+            color = Color.Black,
+            fontWeight = FontWeight.Bold
+        )
